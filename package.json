@@ -1,0 +1,23 @@
+{
+  "name": "io.sonarcloud.examples.typescript-sqscanner-travis-project",
+  "version": "1.0.0",
+  "description": "TypeScript SQ-Scanner-based project analyzed on SonarCloud using Travis",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest --coverage",
+    "tslint": "tslint -t json -o tslint-report.json --project . --force"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "ts-jest": "^25.0.0",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/jest": "^25.1.0"
+  }
+}
